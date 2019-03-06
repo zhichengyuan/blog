@@ -7,17 +7,17 @@
   
   <title>webpack的使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 ##二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack w">
+  <meta name="description" content="#一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 #二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack web">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack的使用">
 <meta property="og:url" content="http://yoursite.com/2019/03/06/sencedblog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 ##二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack w">
+<meta property="og:description" content="#一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 #二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack web">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-06T15:29:27.234Z">
+<meta property="og:updated_time" content="2019-03-06T15:33:58.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack的使用">
-<meta name="twitter:description" content="##一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 ##二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack w">
+<meta name="twitter:description" content="#一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 #二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack web">
   
     <link rel="alternate" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,19 +86,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##一、webpack的理解<br>1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。</p>
-<p>##二、webpack的使用<br>1、安装git，node环境<br>2、全局安装webpack （npm包管理工具）命令：npm install webpack webpack-cli -g   (webpack-cli 是命令行接口工具）<br>     npm安装的慢的情况下可以使用cnpm（淘宝镜像）命令：npm install -g –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>     用的时候要统一，否则容易出现错误<br>3、全局安装之后再局部安装防止webpack版本冲突<br>     （1）初始化当前项目 命令：npm init   （在文件夹内会出现pack.json文件）<br>     （2）局部安装webpack 命令：npm install webpack webpack-cli –save-dev(安装在当前的开发环境当中)<br>注意：当互相传文件的时候可以不传node_modules文件，但是得传输package.json文件，然后通过npm install下载包<br>4、执行wepack  ！报错–》新建入口文件   .src/index.js<br>     设置入口文件（webpack4以上必须自己设置入口文件、 默认处理src文件夹下的index.js）<br>     设置完入口文件通过命令：webpack打包，打包出的dist文件就是压缩后的文件<br>5、规定webpack处理打包方式—&gt;shell语句和配置文件<br>6、配置wepack.config.js文件（详情看class文件夹）<br>7、开启监听模式 命令：webpack –watch (省的老是用webpack命令手动打包）<br>8、在本地打开文件<br>   （1）先下载服务  命令：npm install webpack-dev-server -D 开发环境下安装<br>   （2）开启服务器 命令：webpack-dev-server（不知道为什么不好使）<br>9、loader的加载和使用<br>    下载css相关的loader和抽离html的相关loader，，，下载js相关的loader，，，下载完成需要写相应的配置文件<br>    (命令：npm install style-loader css-loader -D)</p>
-<pre><code>img打包是只有经过入口文件的图片才会被打包(下载的命令:npm install url-loader -D)
- （1）、两种抽离html的方法：
-       下载loader（ npm install file-loader html-loader extract-loader -D）或者下载插件（npm install html-webpack-plugin -D）
-  （2）、下载压缩js的插件npm install uglifyjs-webpack-plugin -D    然后在入口文件里引入，然后再引用
-  （3）、下载压缩css的插件 npm install mini-css-extract-plugin -D 然后在入口文件里面引入，然后使用
-</code></pre><p>10、webpack的简单工作流程</p>
+        <p>#一、webpack的理解<br>1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。</p>
+<p>#二、webpack的使用<br>1、安装git，node环境<br>2、全局安装webpack （npm包管理工具）命令：npm install webpack webpack-cli -g   (webpack-cli 是命令行接口工具）<br>     npm安装的慢的情况下可以使用cnpm（淘宝镜像）命令：npm install -g –registry <a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>     用的时候要统一，否则容易出现错误<br>3、全局安装之后再局部安装防止webpack版本冲突<br>     （1）初始化当前项目 命令：npm init   （在文件夹内会出现pack.json文件）<br>     （2）局部安装webpack 命令：npm install webpack webpack-cli –save-dev(安装在当前的开发环境当中)<br>注意：当互相传文件的时候可以不传node_modules文件，但是得传输package.json文件，然后通过npm install下载包<br>4、执行wepack  ！报错–》新建入口文件   .src/index.js<br>     设置入口文件（webpack4以上必须自己设置入口文件、 默认处理src文件夹下的index.js）<br>     设置完入口文件通过命令：webpack打包，打包出的dist文件就是压缩后的文件<br>5、规定webpack处理打包方式—&gt;shell语句和配置文件<br>6、配置wepack.config.js文件（详情看class文件夹）<br>7、开启监听模式 命令：webpack –watch (省的老是用webpack命令手动打包）<br>8、在本地打开文件<br>   （1）先下载服务  命令：npm install webpack-dev-server -D 开发环境下安装<br>   （2）开启服务器 命令：webpack-dev-server（不知道为什么不好使）<br>9、loader的加载和使用<br>    下载css相关的loader和抽离html的相关loader，，，下载js相关的loader，，，下载完成需要写相应的配置文件<br>    (命令：npm install style-loader css-loader -D)<br>    img打包是只有经过入口文件的图片才会被打包(下载的命令:npm install url-loader -D)<br>     （1）、两种抽离html的方法：<br>           下载loader（ npm install file-loader html-loader extract-loader -D）或者下载插件（npm install html-webpack-plugin -D）<br>      （2）、下载压缩js的插件npm install uglifyjs-webpack-plugin -D    然后在入口文件里引入，然后再引用<br>      （3）、下载压缩css的插件 npm install mini-css-extract-plugin -D 然后在入口文件里面引入，然后使用<br>10、webpack的简单工作流程</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/06/sencedblog/" data-id="cjsxcypat000250ueuikh7jth" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/06/sencedblog/" data-id="cjsxd4elx0002jkuest9tz7xk" class="article-share-link">Share</a>
       
       
     </footer>
