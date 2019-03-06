@@ -5,15 +5,19 @@
   
 
   
-  <title>Hexo</title>
+  <title>webpack的使用 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="##一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 ##二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="webpack的使用">
+<meta property="og:url" content="http://yoursite.com/2019/03/06/sencedblog/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 ##二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack w">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-06T15:29:27.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="webpack的使用">
+<meta name="twitter:description" content="##一、webpack的理解1、webpack是一个模块处理器，将一切的文件看成是一个个的模块，有一个入口文件，根据入口和文件的依赖打包文件，支持AMD、CMD和es6的import规范。其目的是为了提高开发效率，提高代码质量，保证开发的统一性。 ##二、webpack的使用1、安装git，node环境2、全局安装webpack （npm包管理工具）命令：npm install webpack w">
   
     <link rel="alternate" href="/blog/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-sencedblog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-sencedblog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2019/03/06/sencedblog/" class="article-date">
   <time datetime="2019-03-06T15:27:29.000Z" itemprop="datePublished">2019-03-06</time>
@@ -75,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/03/06/sencedblog/">webpack的使用</a>
+    <h1 class="article-title" itemprop="name">
+      webpack的使用
     </h1>
   
 
@@ -102,93 +104,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-firstblog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/03/06/firstblog/" class="article-date">
-  <time datetime="2019-03-06T14:56:08.000Z" itemprop="datePublished">2019-03-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/03/06/firstblog/">firstblog</a>
-    </h1>
+    <a href="/blog/2019/03/06/firstblog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">firstblog</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="创建个人的hexo博客"><a href="#创建个人的hexo博客" class="headerlink" title="创建个人的hexo博客"></a>创建个人的hexo博客</h1><h2 id="This-is-my-first-blog"><a href="#This-is-my-first-blog" class="headerlink" title="This is my first blog!"></a>This is my first blog!</h2><p>1、安装node环境<br>2、下载hexo脚手架  命令：npm install hexo-cli -g<br>3、下载hexo包 命令：hexo init blog<br>4、进入blog文件夹  安装依赖  命令：npm install<br>5、启动本地服务看看是否有效  命令：hexo server<br>6、部署到GitHub上  命令：npm install hexo-deployer-git –save<br>     更改配置文件_config.yml<br>7、hexo g 变为生产环境<br>8、hexo d 变为开发环境<br>9、hexo new post 名称    写blog</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/06/firstblog/" data-id="cjsxcypao000150ueew92jgd8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/03/06/hello-world/" class="article-date">
-  <time datetime="2019-03-06T13:38:04.121Z" itemprop="datePublished">2019-03-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/03/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/06/hello-world/" data-id="cjsxcypae000050uef1hslsyo" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
